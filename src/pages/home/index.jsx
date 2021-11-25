@@ -41,7 +41,7 @@ const TYBNB = () => {
           <div className='tybnb-page_message_board'>
             <p className='tybnb-page_message tybnb-page_message_grey'>...</p>
             <p className='tybnb-page_message tybnb-page_message_dark_blue'>
-              2027 Step over Etherum
+              2022 Fuel BNB to $1000
               <svg width='100' height='100' viewBox='-50 -50 300 300'>
                 <polygon
                   className='dark_blue_triangle'
@@ -53,7 +53,7 @@ const TYBNB = () => {
           </div>
           <div className='tybnb-page_message_board'>
             <p className='tybnb-page_message tybnb-page_message_purple'>
-              2022 Fuel BNB to $1000
+              2027 Step over Etherum
               <svg width='100' height='100' viewBox='-50 -50 300 300'>
                 <polygon
                   className='purple_triangle'
@@ -74,7 +74,7 @@ const TYBNB = () => {
       </div>
       <div className='tybnb-page_footer'>
         <div className='tybnb-page_footer_content'>
-          <a className='twitter'>
+          <a className='twitter' href='https://twitter.com/ThankyouBNB' target='_blank'>
             <img src={Twitter} />
             Twitter
           </a>

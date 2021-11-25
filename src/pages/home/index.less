@@ -1,0 +1,732 @@
+.tybnb-page {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+  &_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 56px 0 192px;
+    width: 1180px;
+  }
+  &_title_png {
+    width: 200px;
+    height: 200px;
+  }
+  &_title_text {
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 0;
+    width: 100%;
+    height: 494px;
+    font-size: 200px;
+    font-family: Silkscreen;
+    color: #000000;
+    line-height: 494px;
+    background: #FFE200;
+    border-radius: 50px;
+    text-align: center;
+    svg {
+      position: absolute;
+      bottom: -50px;
+      right: 0px;
+      transform: rotate(141deg)
+    }
+    .yellow_triangle {
+      fill: #FFE200;
+      stroke: #FFE200;
+      stroke-width: 45;
+    }
+  }
+  &_title_cz {
+    margin: 30px 0 100px;
+    width: 734px;
+    height: 736px;
+  }
+  &_board_box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  &_message_board {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    &:nth-child(2n) {
+      margin: 36px 0 50px;
+    }
+    .tybnb-page_message {
+      position: relative;
+      margin-bottom: 0;
+      padding: 30px 18px 20px 30px;
+      font-size: 60px;
+      font-family: Silkscreen;
+      &:nth-child(2n-1) {
+        margin-right: 60px;
+      }
+    }
+    .tybnb-page_message_light_blue {
+      width: 50%;
+      background: #77CAFF;
+      border-radius: 50px;
+      svg {
+        position: absolute;
+        bottom: -44px;
+        left: -18px;
+        z-index: -1;
+        transform: rotate(-134deg);
+      }
+      .light_blue_triangle {
+        fill: #77CAFF;
+        stroke: #77CAFF;
+        stroke-width: 40;
+      }
+    }
+    .tybnb-page_message_pink {
+      width: 420px;
+      height: 115px;
+      background: url('../../assets/image/tybnb/message_bg.png') no-repeat;
+      background-size: 100% 100%;
+    }
+    .tybnb-page_message_grey {
+      min-width: 432px;
+      height: 160px;
+      font-size: 160px;
+      color:  #777777;
+      line-height: 42px;
+      text-align: center;
+      background: #E8E8E8;
+      border-radius: 200px;
+    }
+    .tybnb-page_message_dark_blue {
+      font-family: Silkscreen;
+      color: #FFFFFF;
+      background: #199FFF;
+      border-radius: 50px;
+      svg {
+        position: absolute;
+        bottom: -44px;
+        right: -10px;
+        z-index: -1;
+        transform: rotate(134deg);
+      }
+      .dark_blue_triangle {
+        fill: #199FFF;
+        stroke: #199FFF;
+        stroke-width: 40;
+      }
+    }
+    .tybnb-page_message_purple {
+      width: 50%;
+      color: #FFFFFF;
+      background: #A25AFF;
+      border-radius: 50px;
+      svg {
+        position: absolute;
+        bottom: -44px;
+        left: -18px;
+        z-index: -1;
+        transform: rotate(-134deg);
+      }
+      .purple_triangle {
+        fill: #A25AFF;
+        stroke: #A25AFF;
+        stroke-width: 40;
+      }
+    }
+  }
+  &_line {
+    width: 100%;
+    height: 8px;
+    background-color: #e8e8e8;
+  }
+  &_enter_message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 80px 0 80px;
+    width: 1180px;
+    a {
+      display: inline-block;
+      margin-right: 68px;
+      width: 82px;
+      height: 82px;
+    }
+    .gif {
+      background: url('../../assets/image/tybnb/GIF.svg') no-repeat;
+      background-size: 100% 100%;
+    }
+    .picture {
+      background: url('../../assets/image/tybnb/picture.svg') no-repeat;
+      background-size: 100% 100%;
+    }
+    .send {
+      margin-right: 0;
+      margin-left: 68px;
+      background: url('../../assets/image/tybnb/fasong.svg') no-repeat;
+      background-size: 100% 100%;
+    }
+    input {
+      display: inline-block;
+      padding: 0 30px;
+      width: 756px;
+      height: 116px;
+      font-size: 40px;
+      color: #FF7800;
+      font-family: Silkscreen;
+      border-radius: 98px;
+      border: 8px solid #FF7800;
+      &::placeholder {
+        font-size: 40px;
+        font-family: Silkscreen;
+        color: #636970;
+      }
+    }
+  }
+  &_footer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-width: 1180px;
+    height: 439px;
+    background: #000;
+    .tybnb-page_footer_content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 auto;
+      width: 1180px;
+    }
+    .twitter, .telegram {
+      display: inline-block;
+      margin-right: 32px;
+      width: 50%;
+      height: 200px;
+      line-height: 180px;
+      font-size: 70px;
+      font-family: Silkscreen;
+      color: #FFFFFF;
+      border-radius: 100px;
+      border: 10px solid #FFFFFF;
+      text-align: center;
+      img {
+        width: 110px;
+        height: 110px;
+      }
+    }
+    .telegram {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (min-width:747px) and (max-width: 1259px) {
+  .tybnb-page {
+    &_content {
+      padding: 36px 40px 152px;
+      width: 100%;
+    }
+    &_title_png {
+      width: 200px;
+      height: 200px;
+    }
+    &_title_text {
+      margin-top: 30px;
+      height: 260px;
+      font-size: 100px;
+      line-height: 260px;
+      border-radius: 40px;
+    }
+    &_title_cz {
+      margin: 40px 0 80px;
+      width: 704px;
+      height: 706px;
+    }
+    &_message_board {
+      &:nth-child(2n) {
+        margin: 36px 0 42px;
+      }
+      .tybnb-page_message {
+        padding: 20px 16px 20px 30px;
+        font-size: 34px;
+        font-family: Silkscreen;
+        &:nth-child(2n-1) {
+          margin-right: 40px;
+        }
+      }
+      .tybnb-page_message_light_blue {
+        border-radius: 26px;
+        svg {
+          position: absolute;
+          bottom: -40px;
+          left: -4px;
+          z-index: -1;
+          width: 80px;
+          height: 80px;
+          transform: rotate(-137deg);
+        }
+        .light_blue_triangle {
+          fill: #77CAFF;
+          stroke: #77CAFF;
+          stroke-width: 30;
+        }
+      }
+      .tybnb-page_message_pink {
+        width: 360px;
+        height: 96px;
+        background: url('../../assets/image/tybnb/message_bg.png') no-repeat;
+        background-size: 100% 100%;
+      }
+      .tybnb-page_message_grey {
+        min-width: 232px;
+        height: 90px;
+        font-size: 60px;
+        line-height: 30px;
+        border-radius: 45px;
+      }
+      .tybnb-page_message_dark_blue {
+        border-radius: 26px;
+        svg {
+          position: absolute;
+          bottom: -37px;
+          right: -2px;
+          z-index: -1;
+          width: 80px;
+          height: 80px;
+          transform: rotate(136deg);
+        }
+        .dark_blue_triangle {
+          fill: #199FFF;
+          stroke: #199FFF;
+          stroke-width: 30;
+        }
+      }
+      .tybnb-page_message_purple {
+        border-radius: 26px;
+      }
+    }
+    &_line {
+      width: 100%;
+      height: 4px;
+      background-color: #e8e8e8;
+    }
+    &_enter_message {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      padding: 60px 0;
+      width: 100%;
+      a {
+        display: inline-block;
+        margin-right: 20px;
+        width: 42px;
+        height: 42px;
+      }
+      .send {
+        margin-right: 0;
+        margin-left: 20px;
+      }
+      input {
+        display: inline-block;
+        padding: 0 30px;
+        width: 600px;
+        height: 76px;
+        font-size: 30px;
+        font-family: Silkscreen;
+        border-radius: 38px;
+        border: 4px solid #FF7800;
+        &::placeholder {
+          font-size: 30px;
+          font-family: Silkscreen;
+          color: #636970;
+        }
+      }
+    }
+    &_footer {
+      padding: 0 40px;
+      min-width: 100%;
+      height: 239px;
+      .twitter, .telegram {
+        display: inline-block;
+        margin-right: 32px;
+        width: 50%;
+        height: 110px;
+        line-height: 100px;
+        font-size: 40px;
+        font-family: Silkscreen;
+        color: #FFF;
+        border-radius: 100px;
+        border: 5px solid #FFF;
+        text-align: center;
+        img {
+          width: 90px;
+          height: 90px;
+        }
+      }
+      .telegram {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media  (min-width:359px) and (max-width: 746px) {
+  .tybnb-page {
+    &_content {
+      padding: 36px 20px 82px;
+      width: 100%;
+    }
+    &_title_png {
+      width: 200px;
+      height: 200px;
+    }
+    &_title_text {
+      margin-top: 30px;
+      height: 120px;
+      font-size: 50px;
+      line-height: 120px;
+      border-radius: 30px;
+      svg {
+        position: absolute;
+        bottom: -50px;
+        right: 0px;
+        width: 100px;
+        height: 100px;
+        transform: rotate(141deg)
+      }
+      .yellow_triangle {
+        fill: #FFE200;
+        stroke: #FFE200;
+        stroke-width: 30;
+      }
+    }
+    &_title_cz {
+      margin: 30px 0 60px;
+      width: 320px;
+      height: 326px;
+    }
+    &_message_board {
+      &:nth-child(2n) {
+        margin: 26px 0 40px;
+      }
+      .tybnb-page_message {
+        padding: 10px 10px 10px 14px;
+        font-size: 20px;
+        font-family: Silkscreen;
+        &:nth-child(2n-1) {
+          margin-right: 20px;
+        }
+      }
+      .tybnb-page_message_light_blue {
+        border-radius: 15px;
+        svg {
+          position: absolute;
+          bottom: -23px;
+          left: -2px;
+          z-index: -1;
+          width: 50px;
+          height: 50px;
+          transform: rotate(-133deg);
+        }
+        .light_blue_triangle {
+          fill: #77CAFF;
+          stroke: #77CAFF;
+          stroke-width: 30;
+        }
+      }
+      .tybnb-page_message_pink {
+        width: 200px;
+        height: 52px;
+        background: url('../../assets/image/tybnb/message_bg.png') no-repeat;
+        background-size: 100% 100%;
+      }
+      .tybnb-page_message_grey {
+        min-width: 112px;
+        height: 60px;
+        font-size: 30px;
+        line-height: 30px;
+        border-radius: 30px;
+      }
+      .tybnb-page_message_dark_blue {
+        border-radius: 15px;
+        svg {
+          position: absolute;
+          bottom: -24px;
+          right: -4px;
+          z-index: -1;
+          height: 50px;
+          width: 50px;
+          transform: rotate(137deg);
+        }
+        .dark_blue_triangle {
+          fill: #199FFF;
+          stroke: #199FFF;
+          stroke-width: 30;
+        }
+      }
+      .tybnb-page_message_purple {
+        border-radius: 15px;
+        svg {
+          position: absolute;
+          bottom: -24px;
+          left: -2px;
+          z-index: -1;
+          width: 50px;
+          height: 50px;
+          transform: rotate(-134deg);
+        }
+        .purple_triangle {
+          fill: #A25AFF;
+          stroke: #A25AFF;
+          stroke-width: 30;
+        }
+      }
+    }
+    &_line {
+      width: 100%;
+      height: 4px;
+      background-color: #e8e8e8;
+    }
+    &_enter_message {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      padding: 30px 0;
+      width: 100%;
+      a {
+        display: inline-block;
+        margin-right: 10px;
+        width: 22px;
+        height: 22px;
+      }
+      .send {
+        margin-right: 0;
+        margin-left: 10px;
+      }
+      input {
+        display: inline-block;
+        padding: 0 10px;
+        width: 260px;
+        height: 46px;
+        font-size: 14px;
+        font-family: Silkscreen;
+        border-radius: 23px;
+        border: 2px solid #FF7800;
+        &::placeholder {
+          font-size: 14px;
+          font-family: Silkscreen;
+          color: #636970;
+        }
+      }
+    }
+    &_footer {
+      padding: 0 20px;
+      min-width: 100%;
+      height: 140px;
+      .twitter, .telegram {
+        display: inline-block;
+        margin-right: 10px;
+        width: 50%;
+        height: 60px;
+        line-height: 58px;
+        font-size: 18px;
+        font-family: Silkscreen;
+        color: #FFF;
+        border-radius: 30px;
+        border: 2px solid #FFF;
+        text-align: center;
+        img {
+          width: 30px;
+          height: 30px;
+        }
+      }
+      .telegram {
+        margin-right: 0;
+      }
+    }
+  }
+}
+@media (max-width: 359px) {
+  .tybnb-page {
+    &_content {
+      padding: 36px 20px 52px;
+      width: 100%;
+    }
+    &_title_png {
+      width: 200px;
+      height: 200px;
+    }
+    &_title_text {
+      margin-top: 30px;
+      height: 120px;
+      font-size: 50px;
+      line-height: 120px;
+      border-radius: 30px;
+      svg {
+        position: absolute;
+        bottom: -40px;
+        right: 0px;
+        width: 80px;
+        height: 80px;
+        transform: rotate(139deg)
+      }
+      .yellow_triangle {
+        fill: #FFE200;
+        stroke: #FFE200;
+        stroke-width: 30;
+      }
+    }
+    &_title_cz {
+      margin: 30px 0 60px;
+      width: 320px;
+      height: 326px;
+    }
+    &_message_board {
+      &:nth-child(2n) {
+        margin: 22px 0 30px;
+      }
+      .tybnb-page_message {
+        padding: 10px 8px 10px 10px;
+        font-size: 16px;
+        font-family: Silkscreen;
+        &:nth-child(2n-1) {
+          margin-right: 10px;
+        }
+      }
+      .tybnb-page_message_light_blue {
+        border-radius: 15px;
+        svg {
+        position: absolute;
+        bottom: -23px;
+        left: -2px;
+        z-index: -1;
+        width: 50px;
+        height: 50px;
+        transform: rotate(-133deg);
+      }
+      .light_blue_triangle {
+        fill: #77CAFF;
+        stroke: #77CAFF;
+        stroke-width: 30;
+      }
+      }
+      .tybnb-page_message_pink {
+        width: 200px;
+        height: 48px;
+        background: url('../../assets/image/tybnb/message_bg.png') no-repeat;
+        background-size: 100% 100%;
+      }
+      .tybnb-page_message_grey {
+        min-width: 112px;
+        height: 50px;
+        font-size: 30px;
+        line-height: 20px;
+        border-radius: 30px;
+      }
+      .tybnb-page_message_dark_blue {
+        border-radius: 15px;
+        svg {
+          position: absolute;
+          bottom: -24px;
+          right: -4px;
+          z-index: -1;
+          height: 50px;
+          width: 50px;
+          transform: rotate(137deg);
+        }
+        .dark_blue_triangle {
+          fill: #199FFF;
+          stroke: #199FFF;
+          stroke-width: 30;
+        }
+      }
+      .tybnb-page_message_purple {
+        border-radius: 15px;
+        svg {
+        position: absolute;
+        bottom: -24px;
+        left: -2px;
+        z-index: -1;
+        width: 50px;
+        height: 50px;
+        transform: rotate(-134deg);
+      }
+      .purple_triangle {
+        fill: #A25AFF;
+        stroke: #A25AFF;
+        stroke-width: 30;
+      }
+      }
+    }
+    &_line {
+      width: 100%;
+      height: 4px;
+      background-color: #e8e8e8;
+    }
+    &_enter_message {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      padding: 30px 0;
+      width: 100%;
+      a {
+        display: inline-block;
+        margin-right: 10px;
+        width: 22px;
+        height: 22px;
+      }
+      .send {
+        margin-right: 0;
+        margin-left: 10px;
+      }
+      input {
+        display: inline-block;
+        padding: 0 10px;
+        width: 200px;
+        height: 36px;
+        font-size: 14px;
+        font-family: Silkscreen;
+        border-radius: 18px;
+        border: 2px solid #FF7800;
+        &::placeholder {
+          font-size: 14px;
+          font-family: Silkscreen;
+          color: #636970;
+        }
+      }
+    }
+    &_footer {
+      padding: 0 20px;
+      min-width: 100%;
+      height: 140px;
+      .twitter, .telegram {
+        display: inline-block;
+        margin-right: 10px;
+        width: 50%;
+        height: 50px;
+        line-height: 48px;
+        font-size: 16px;
+        font-family: Silkscreen;
+        color: #FFF;
+        border-radius: 25px;
+        border: 2px solid #FFF;
+        text-align: center;
+        img {
+          width: 30px;
+          height: 30px;
+        }
+      }
+      .telegram {
+        margin-right: 0;
+      }
+    }
+  }
+}
